@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Lucotecia';
+    src: url('./fonts/Lucotecia-Medium.woff2') format('woff2'),
+         url('./fonts/Lucotecia-Medium.woff') format('woff'),
+         url('./fonts/Lucotecia Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+html{
+    font-family: Arial, serif;
+    font-size: 16px;
+}
+*{
+    margin:0;
+    padding:0;
+}
+#hero {
+    background: url('./fond.jpg') no-repeat;
+    background-size: cover;
+    padding-bottom: 1%;
+}
+nav{
+        background-color: rgba(0,0,0,0.5);
+    text-align:center;
+    padding-bottom:20px;
+    padding-top:20px;
+    }
+
+#bandeau{
+    background-color: rgba(255,255,255,0.5);
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+#contenu{
+    text-align: center;
+    padding: 5%;
+}
+
+
+
+h1{
+    color: rgb(110,57,255,0.5);
+    font-size: 24px;
+    font-family: Lucotecia, serif;
+
+}
+h2{
+    color: #6E39FF;
+    font-size: 20px;
+    font-family: Lucotecia, serif;
+
+}
+
+h3{
+
+}
+a{
+    color:white;
+    text-decoration: none;
+    padding:20px;
+    transition: 1s;
+
+}
+a:hover{
+    color:red;
+
+}
+
+#contenu a{
+    color: red;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 20px;
+    transition: ease 1s;
+}
+
+#contenu a:hover{
+    color:white;
+    background-color: rgb(178,32,19,0.5);
+}
+#contenu img:hover{
+    transform: rotate(360deg) scale(1.5);
+}
+
+#contenu img{
+    transition: 0.5s;
+}
+
+#apropos{
+    display: flex;
+}
+
+#apropos_image{
+    padding:20px;
+    flex:1;
+    max-width: 100%;
+}
+
+#apropos_texte{
+    padding:20px;
+    flex: 2;
+    text-align: justify;
+}
+
+#services{
+    display: flex;
+    background-color: #666;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.services_item p{
+    text-align: justify;
+    padding: 20px;
+}
+
+@media screen and (max-width: 414px){
+    #apropos{
+        flex-direction: column;
+    }
+    #services{
+        flex-direction: column
+    }
+    nav a{
+        display: block;
+        padding: 10px;
+    }
+}
+
